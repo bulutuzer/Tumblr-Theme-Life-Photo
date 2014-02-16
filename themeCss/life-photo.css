@@ -1,0 +1,231 @@
+/*
+	Life photo adlı temanın arayüzü Bulut Üzer tarafından kodlanmıştır.
+	http://www.bulutuzer.com
+*/
+
+@font-face {
+	font-family: franklingothicbook;
+	src: url('../themeFont/franklingothicbook.eot');
+	src: url('../themeFont/franklingothicbook.eot?#iefix') format('embedded-opentype'),
+		url('../themeFont/franklingothicbook.woff') format('woff'),
+		url('../themeFont/franklingothicbook.ttf') format('trutype'),
+		url('../themeFont/franklingothicbook.svg#franklingothicbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'franklingothicdemi';
+    src: url('../themeFont/franklingothicdemi.eot');
+    src: url('../themeFont/franklingothicdemi.eot?#iefix') format('embedded-opentype'),
+         url('../themeFont/franklingothicdemi.woff') format('woff'),
+         url('../themeFont/franklingothicdemi.ttf') format('truetype'),
+         url('../themeFont/franklingothicdemi.svg#franklingothicdemi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'franklindemi';
+    src: url('../themeFont/franklindemi.eot');
+    src: url('../themeFont/franklindemi.eot?#iefix') format('embedded-opentype'),
+         url('../themeFont/franklindemi.woff') format('woff'),
+         url('../themeFont/franklindemi.ttf') format('truetype'),
+         url('../themeFont/franklindemi.svg#franklindemi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'franklinmedium';
+    src: url('../themeFont/franklinmedium.eot');
+    src: url('../themeFont/franklinmedium.eot?#iefix') format('embedded-opentype'),
+         url('../themeFont/franklinmedium.woff') format('woff'),
+         url('../themeFont/franklinmedium.ttf') format('truetype'),
+         url('../themeFont/franklinmedium.svg#franklinmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'franklinheavy';
+    src: url('../themeFont/franklinheavy.eot');
+    src: url('../themeFont/franklinheavy.eot?#iefix') format('embedded-opentype'),
+         url('../themeFont/franklinheavy.woff') format('woff'),
+         url('../themeFont/franklinheavy.ttf') format('truetype'),
+         url('../themeFont/franklinheavy.svg#franklinheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helveticaneueltpromd';
+    src: url('../themeFont/helveticaneueltpromd.eot');
+    src: url('../themeFont/helveticaneueltpromd.eot?#iefix') format('embedded-opentype'),
+         url('../themeFont/helveticaneueltpromd.woff') format('woff'),
+         url('../themeFont/helveticaneueltpromd.ttf') format('truetype'),
+         url('../themeFont/helveticaneueltpromd.svg#helveticaneueltpromd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: neulLtRoman;
+	src: url('../themeFont/neulLtRoman.eot');
+	src: url('../themeFont/neulLtRoman.eot?#iefix') format('embedded-opentype'),
+		url('../themeFont/neulLtRoman.woff') format('woff'),
+		url('../themeFont/neulLtRoman.ttf') format('trutype'),
+		url('../themeFont/neulLtRoman.svg#neulLtRoman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{ background-color: rgb(26,26,26); }
+
+/* stabil class */
+
+.left { float: left; }
+.right { float: right !important; }
+.clear { clear: both; }
+.overflowHid { overflow: hidden; }
+.overflowAuto { overflow: auto; }
+.marginNone { margin: 0px !important; }
+.marginAuto { margin: 0px auto; }
+.paddingNone { padding: 0px !important; }
+.displayNone { display: none; }
+.displayBlock { display: block; }
+.stabilSize { width: 990px; margin: 0px auto; }
+.autoSize { width: 100% !important; height: auto; }
+.img { width: 100%; max-width: 100%; }
+.positionAb { position: absolute; }
+
+/* text color */
+
+.darkBlueColor { color: rgb(59,89,152) !important; }
+.lightBlueColor { color: rgb(68,204,246) !important; }
+.paleOrangeColor { color: rgb(211,198,179) !important; }
+.orangeColor { color: rgb(255,157,31) !important; }
+
+/* header */
+
+header { padding: 40px 0px; }
+nav.socialMenu > ul,nav.menu > ul { padding: 40px 0px; overflow: hidden; }
+nav.socialMenu > ul > li,nav.menu > ul > li { float: left; margin-right: 45px; }
+nav.socialMenu > ul > li:last-child,nav.menu > ul > li:last-child { margin-right: 0px !important; }
+nav.socialMenu > ul > li > a,nav.menu > ul > li > a { font-family: "helveticaneueltpromd"; font-size: 15.18px; letter-spacing: 1px; color: rgb(255,255,255); }
+h1.logoBackground{ float: left; margin: 0px 126px; }
+h1.logoBackground > a { display: block; width: 195px; height: 92px; }
+
+/* post */
+
+article.post { background-color: rgb(17,17,17); width: 990px; height: 548px; border: 1px solid rgba(0,0,0,0.3); overflow: hidden; position: relative; border-bottom: 0px; }
+article.post:nth-last-child(even) { border-bottom: 1px solid rgba(0,0,0,0.3) !important; }
+article.post > div.openCaption,
+article.post > div.caption > div.activeCaption { background-color: rgba(17,17,17,0.3); width: 100%; height: 548px; left: 0px; }
+article.post > div.caption > div.activeCaption > span { background-image: url("../themeImage/post-hover-icon-right.png") !important; }
+article.post > div.openCaption > span,
+article.post > div.caption > div.activeCaption > span {
+	background-color: rgba(17,17,17,0.8);
+	background-image: url("../themeImage/post-hover-icon-left.png");
+	background-position: 20px 28px;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 50px;
+	-o-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	margin: 25% 46%;
+	cursor: pointer;
+	display: block;
+	width: 80px;
+	height: 80px;
+}
+
+/* post caption */
+
+div.tumblrSocialWrap { background-color: rgba(26,26,26,0.85); float: right; width: 346px; height: 550px; position: relative; }
+div.tumblrSocialWrap > nav.tumblrButtonMenu > ul { padding: 15px 0px; overflow: hidden; width: 130px; margin: 0px auto; }
+div.tumblrSocialWrap > nav.tumblrButtonMenu > ul > li { margin-right: 18px; float: left; }
+div.tumblrSocialWrap > nav.tumblrButtonMenu > ul > li > a > img,
+div.tumblrSocialWrap > nav.tumblrSocialInfo > ul > li > img,
+div#captionText > nav.tumblrButtonMenu > ul > li > a > img,
+div.jspPane > ul > li > img { display: block !important; }
+div.tumblrSocialWrap > nav.tumblrButtonMenu > ul > li:last-child,
+div#captionText > nav.tumblrButtonMenu > ul > li:last-child { margin-right: 0px !important; }
+div.tumblrSocialWrap > nav.tumblrButtonMenu > ul > li:nth-child(3) > a > img,
+div#captionText > nav.tumblrButtonMenu > ul > li:nth-child(3) > a > img { margin-top: -2px; }
+
+div.tumblrSocialWrap > nav.tumblrSocialInfo { height: 488px; overflow-y: scroll; padding: 0px 25px 0px 35px; }
+div.tumblrSocialWrap > nav.tumblrSocialInfo > ul > li,div.jspPane > ul > li,div.postContent > nav.tumblrSocialInfo > ul > li { overflow: hidden; margin-bottom: 5px; }
+div.tumblrSocialWrap > nav.tumblrSocialInfo > ul > li > img,div.jspPane > ul > li > img,,div.postContent > nav.tumblrSocialInfo > ul > li > img { margin-top: 1px; }
+div.tumblrSocialWrap > nav.tumblrSocialInfo > ul > li > img,
+div.tumblrSocialWrap > nav.tumblrSocialInfo > ul > li > img,
+div.postContent > nav.tumblrSocialInfo > ul > li > img,
+div.jspPane > ul > li > img { float: left; margin-right: 10px; }
+div.tumblrSocialWrap > nav.tumblrSocialInfo > ul > li > a,
+div.postContent > nav.tumblrSocialInfo > ul > li > a,
+div.jspPane > ul > li > a { font-family: "franklingothicbook"; font-size: 16px; color: rgb(69,69,69); }
+
+/* text post caption */
+
+div.captionText { width: 80%; height: 100%; position: relative; padding: 30px 0px 30px 70px; }
+div.postTitle { overflow: hidden; } 
+div.postTitle > h1 { font-family: "helveticaneueltpromd"; font-size: 30px; font-weight: 100; color: rgb(255,255,255); float: left; }
+div.postTitle > span { font-family: "neulLtRoman"; font-size: 12px; color: rgb(68,68,68); border-left: 1px solid rgb(68,68,68); float: left; padding: 0px 10px 0px; line-height: 25px; margin: 4px 12px; }
+div.postContent { height: 613px; padding: 0px 90px 0px 0px; overflow-y: scroll; }
+div.postContent > p { font-family: "neulLtRoman"; font-size: 15px; color: rgb(255,255,255); line-height: 23px; }
+nav.postTags > ul { overflow: hidden; padding: 15px 0px; }
+nav.postTags > ul > li { float: left; margin-right: 5px; overflow: hidden; }
+nav.postTags > ul > li > span { margin-right: 2px; }
+nav.postTags > ul > li:last-child { float: left; margin-right: 0px !important; }
+nav.postTags > ul > li > a,nav.postTags > ul > li > span { font-family: "arial"; font-size: 13px; color: rgb(69,69,69); float: left; width: auto !important; }
+div.postContent > nav.tumblrSocialInfo > ul > li > img { display: block !important; margin-top: 1px; }
+div#captionText > nav.tumblrButtonMenu { width: 31px; margin: 62px 48px 0px 48px; position: relative; }
+div#captionText > nav.tumblrButtonMenu > ul { overflow: hidden; }
+div#captionText > nav.tumblrButtonMenu > ul > li { float: left; margin-bottom: 15px; }
+div#captionText > nav.tumblrButtonMenu > ul > li:last-child { margin-bottom: 0px !important; }
+
+/* loading more */
+
+span.loadingPost { font-family: arial; font-size: 15px; color: rgb(69,69,69); display: block; font-weight: bold; width: 158px; margin: 60px auto; }
+
+/* footer */
+
+footer { background-color: rgb(17,17,17); width: 100%; height: auto; padding: 5px 0px; text-align: center; }
+footer > a > span { font-family: helveticaneueltpromd; font-size: 13px; color: rgb(69,69,69); }
+
+/* scrollbar */
+
+#defaultScroll::-webkit-scrollbar { background-color: rgb(26,26,26); width: 8px; margin: 0px 0px 0px; }
+#defaultScroll::-webkit-scrollbar-thumb { background-color: rgb(69,69,69); }
+#defaultScroll::-webkit-scrollbar-thumb:hover { background-color: rgb(38,38,38); }
+
+.jspContainer { width: auto !important; }
+.jspPane { width: 280px !important; }
+.jspTrack { background: rgb(26,26,26) !important; /* changed from #dde */ position: relative; width: 8px !important; }
+.jspDrag { background: rgb(69,69,69) !important; /* changed from #bbd */ }
+.jspVerticalBar { background-color: transparent !important; width: 8px !important; }
+.jspHorizontalBar { display: none !important; }
+
+/* mozilla */
+
+@-moz-document url-prefix(){
+	div.tumblrSocialWrap {padding: 0px !important; }
+	div.tumblrSocialWrap > nav.tumblrSocialInfo { width: 345px !important; }
+	div.tumblrSocialWrap > nav.tumblrSocialInfo > ul > li, div.jspPane > ul > li { padding-bottom: 1px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
